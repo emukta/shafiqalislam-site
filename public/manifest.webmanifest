@@ -1,10 +1,13 @@
 {
-  "name": "Roottosuccess Free Tools",
-  "short_name": "Roottosuccess",
-  "description": "বাংলায় ফ্রি অনলাইন টুলস — ছবি, বিজয়-ইউনিকোড, QR কোড ও আরও অনেক কিছু",
+  "name": "Shafiqal Islam — প্রবাসী এগ্রো রিসোর্ট ও ফ্রি টুলস",
+  "short_name": "Shafiqal Islam",
+  "description": "প্রবাসী এগ্রো রিসোর্ট — এগ্রো ফার্ম ও অর্গানিক খাবার, সাথে বাংলায় ফ্রি অনলাইন টুলস",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fbf8f1",
-  "theme_color": "#1f4d2b",
-  "icons": [{ "src": "/icon.png", "sizes": "256x256", "type": "image/png" }]
+  "background_color": "#0b2115",
+  "theme_color": "#0b2115",
+  "icons": [
+    { "src": "/si-icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/si-icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
 }

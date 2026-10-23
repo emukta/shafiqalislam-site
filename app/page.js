@@ -3,19 +3,12 @@ import { Lock, Zap, Smartphone, Monitor, Tablet, ArrowUpRight, Check, ShieldChec
 import Hero from "@/components/home/Hero";
 import ToolsGrid from "@/components/home/ToolsGrid";
 import Faq from "@/components/home/Faq";
-import TrustSection from "@/components/home/TrustSection";
-import AuditForm from "@/components/AuditForm";
+import ProbashiSection from "@/components/home/ProbashiSection";
+import VisitSection from "@/components/home/VisitSection";
 import Reveal from "@/components/Reveal";
 import { SectionHeading, Eyebrow } from "@/components/ui";
 import { WhatsAppGlyph } from "@/components/Icon";
-import { waLink } from "@/lib/site";
-
-const AUDIT_POINTS = [
-  "পেজের ব্র্যান্ডিং ও প্রোফাইল সেটআপ রিভিউ",
-  "কনটেন্ট স্ট্র্যাটেজি — কী পোস্ট করলে রিচ ও সেল বাড়বে",
-  "বুস্ট/অ্যাডের টাকা কোথায় নষ্ট হচ্ছে",
-  "ইনবক্স থেকে অর্ডারে কনভার্শন বাড়ানোর উপায়",
-];
+import { SITE, waLink } from "@/lib/site";
 
 function Bento() {
   return (
@@ -122,67 +115,15 @@ export default function Home() {
       <Bento />
       <ToolsGrid />
 
-      {/* Free audit */}
-      <section id="audit" className="relative isolate scroll-mt-20 overflow-hidden bg-night py-20 text-white sm:py-28">
-        <div className="grid-lines pointer-events-none absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_20%_30%,#000_10%,transparent_65%)]" />
-        <div className="pointer-events-none absolute -left-40 top-0 -z-10 size-[560px] rounded-full bg-forest-600/30 blur-[140px]" />
-        <div className="pointer-events-none absolute -right-20 bottom-0 -z-10 size-[420px] rounded-full bg-lime/10 blur-[120px]" />
-        <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.05fr] lg:items-center lg:gap-16">
-          <Reveal>
-            <Eyebrow dark>Roottosuccess এর পক্ষ থেকে</Eyebrow>
-            <h2 className="display mt-5 text-[36px] font-bold sm:text-5xl lg:text-[60px]">
-              আপনার ফেসবুক পেজের <span className="text-gradient">ফ্রি অডিট</span>
-            </h2>
-            <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-white/60 sm:text-lg">
-              পেজ আছে কিন্তু সেল আসছে না? আমরা আপনার পেজ বিশ্লেষণ করে জানাব — কী কী করলে আপনার বিজনেস গ্রোথ হবে।
-            </p>
-            <ul className="mt-9 grid gap-px overflow-hidden rounded-2xl bg-white/[0.08] ring-1 ring-white/[0.08]">
-              {AUDIT_POINTS.map((p, i) => (
-                <li key={p} className="flex items-center gap-4 bg-night/80 px-5 py-4 text-[16px] text-white/85">
-                  <span className="display w-7 shrink-0 text-[15px] font-semibold text-lime">০{["১", "২", "৩", "৪"][i]}</span>
-                  {p}
-                  <Check className="ml-auto size-5 shrink-0 text-white/30" aria-hidden="true" />
-                </li>
-              ))}
-            </ul>
-            <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/10 pt-8">
-              {[
-                ["২ মিনিট", "ফর্ম পূরণে"],
-                ["৳০", "কোনো খরচ নেই"],
-                ["WhatsApp", "এ রিপোর্ট"],
-              ].map(([a, b]) => (
-                <div key={b}>
-                  <p className="display text-[24px] font-bold text-white sm:text-[30px]">{a}</p>
-                  <p className="text-[13px] text-white/50">{b}</p>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <div className="relative">
-              <div className="pointer-events-none absolute -inset-px rounded-[30px] bg-gradient-to-b from-lime/40 via-white/10 to-transparent" aria-hidden="true" />
-              <div className="relative rounded-[29px] bg-paper p-5 text-ink shadow-[0_40px_100px_-30px_rgb(0_0_0/0.8)] sm:p-8">
-                <div className="mb-6 flex items-start justify-between gap-3 border-b border-line pb-5">
-                  <div>
-                    <p className="display text-[24px] font-bold text-ink">অডিটের জন্য তথ্য দিন</p>
-                    <p className="mt-1 text-[14px] text-muted">২ মিনিটের কাজ — রিপোর্ট আসবে হোয়াটসঅ্যাপে</p>
-                  </div>
-                  <span className="hidden shrink-0 rounded-full bg-lime px-3 py-1 text-[13px] font-bold text-night sm:inline">ফ্রি</span>
-                </div>
-                <AuditForm />
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <ProbashiSection />
 
-      <TrustSection />
+      <VisitSection />
 
       {/* FAQ */}
       <section id="faq" className="scroll-mt-20 py-20 sm:py-28">
         <div className="container-x grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div className="lg:sticky lg:top-28 lg:self-start">
-            <SectionHeading align="left" size="md" eyebrow="প্রশ্নোত্তর" title="সাধারণ জিজ্ঞাসা" desc="যা জানতে চান, তার বেশিরভাগ উত্তর এখানেই।" />
+            <SectionHeading align="left" size="md" eyebrow="প্রশ্নোত্তর" title="প্রবাসী রিসোর্ট, এগ্রো ফার্ম ও অর্গানিক খাবার" desc="রিসোর্ট, খামার আর অর্গানিক খাবার নিয়ে সাধারণ জিজ্ঞাসার উত্তর।" />
             <div className="mt-8 rounded-[24px] bg-paper p-6 ring-1 ring-line shadow-card">
               <span className="grid size-11 place-items-center rounded-full bg-forest-900 text-lime">
                 <MessageCircle className="size-5" aria-hidden="true" />
@@ -191,19 +132,21 @@ export default function Home() {
               <p className="mt-1 text-[15px] text-muted">সরাসরি আমাদের সাথে কথা বলুন — দ্রুত উত্তর পাবেন।</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <a
-                  href={waLink("আসসালামু আলাইকুম, Roottosuccess এর ব্যাপারে একটা প্রশ্ন ছিল।")}
+                  href={waLink("আসসালামু আলাইকুম, প্রবাসী এগ্রো রিসোর্ট নিয়ে একটা প্রশ্ন ছিল।")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex h-11 items-center gap-2 rounded-full bg-wa px-5 text-[15px] font-semibold text-white transition hover:brightness-95"
                 >
                   <WhatsAppGlyph className="size-5" /> হোয়াটসঅ্যাপ
                 </a>
-                <Link
-                  href="/audit/"
+                <a
+                  href={SITE.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex h-11 items-center gap-1.5 rounded-full px-5 text-[15px] font-semibold text-ink ring-1 ring-inset ring-line-strong transition hover:bg-cream"
                 >
-                  যোগাযোগ করুন <ArrowUpRight className="size-4" />
-                </Link>
+                  ফেসবুক পেজ <ArrowUpRight className="size-4" />
+                </a>
               </div>
             </div>
           </div>

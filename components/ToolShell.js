@@ -69,17 +69,17 @@ export default function ToolShell({ tool, children }) {
           <div className="pointer-events-none absolute -right-20 -top-20 -z-10 size-80 rounded-full bg-lime/20 blur-[100px]" />
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-[14px] font-semibold text-lime">ব্যবসা আছে?</p>
-              <h2 className="display mt-2 text-[28px] font-bold sm:text-4xl">আপনার ফেসবুক পেজের ফ্রি অডিট নিন</h2>
+              <p className="text-[14px] font-semibold text-lime">প্রবাসী এগ্রো রিসোর্ট</p>
+              <h2 className="display mt-2 text-[28px] font-bold sm:text-4xl">প্রকৃতির মাঝে একদিন — প্রজেক্ট ঘুরে দেখুন</h2>
               <p className="mt-3 max-w-xl text-white/60">
-                কী কী করলে আপনার বিজনেস গ্রোথ হবে — Roottosuccess টিম পেজ দেখে বিস্তারিত জানাবে, একদম ফ্রি।
+                পুকুর, নৌকা, হাঁসের খামার আর ফলের বাগান — ১ মিনিটে ভিজিট বুক করুন, কনফার্মেশন হোয়াটসঅ্যাপে।
               </p>
             </div>
             <Link
-              href="/audit/"
+              href="/visit/"
               className="group inline-flex min-h-[54px] shrink-0 items-center justify-center gap-2 rounded-full bg-lime px-7 font-semibold text-night shadow-glow transition hover:bg-lime-deep"
             >
-              ফ্রি অডিট নিন <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+              প্রজেক্ট ভিজিট বুক করুন <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
         </div>

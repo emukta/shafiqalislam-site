@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
     title: `${tool.name} (${tool.en})`,
     description: tool.desc,
     alternates: { canonical: `/tools/${tool.slug}/` },
-    openGraph: { title: `${tool.name} — ফ্রি | Roottosuccess`, description: tool.desc },
+    openGraph: { title: `${tool.name} — ফ্রি | Shafiqal Islam`, description: tool.desc },
   };
 }
 

@@ -36,11 +36,11 @@ export default function Hero() {
         <motion.div initial="hidden" animate="show" variants={{ show: { transition: { staggerChildren: 0.1 } } }}>
           <motion.div variants={item}>
             <Link
-              href="/tools/image-upscaler/"
+              href="/#why"
               className="group inline-flex items-center gap-2.5 rounded-full bg-white/[0.06] py-1.5 pl-1.5 pr-4 text-[14px] font-medium text-white/80 ring-1 ring-white/10 backdrop-blur transition hover:bg-white/10 hover:text-white"
             >
               <span className="rounded-full bg-lime px-2.5 py-0.5 text-[12px] font-bold text-night">নতুন</span>
-              ইমেজ আপস্কেলার — ছবি বড় করুন ৪x পর্যন্ত
+              প্রবাসী এগ্রো রিসোর্ট — ছবি ও তথ্য দেখুন
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
             </Link>
           </motion.div>
@@ -68,10 +68,10 @@ export default function Hero() {
               <ArrowRight className="size-5 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
-              href="/audit/"
+              href="/visit/"
               className="group inline-flex min-h-[56px] items-center justify-center gap-2 rounded-full px-8 text-[17px] font-semibold text-white ring-1 ring-inset ring-white/20 transition hover:bg-white/[0.06] active:scale-[0.98]"
             >
-              ফ্রি পেজ অডিট নিন
+              প্রজেক্ট ভিজিট বুক করুন
               <ArrowUpRight className="size-5 text-white/60 transition group-hover:text-lime" />
             </Link>
           </motion.div>
@@ -105,7 +105,7 @@ export default function Hero() {
                   <span className="size-2.5 rounded-full bg-white/15" />
                 </div>
                 <div className="mx-auto flex items-center gap-1.5 rounded-full bg-white/[0.05] px-3 py-1 text-[12px] text-white/45 ring-1 ring-white/[0.06]">
-                  <Lock className="size-3 text-lime" /> tools.roottosuccess.com
+                  <Lock className="size-3 text-lime" /> shafiqalislam.com
                 </div>
                 <span className="w-[42px]" />
               </div>

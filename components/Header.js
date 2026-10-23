@@ -11,8 +11,8 @@ import { ToolIcon } from "./Icon";
 
 const NAV = [
   { href: "/#tools", label: "সব টুলস" },
-  { href: "/audit/", label: "ফ্রি পেজ অডিট" },
-  { href: "/#why", label: "কেন আমরা" },
+  { href: "/#why", label: "প্রবাসী রিসোর্ট" },
+  { href: "/#gallery", label: "গ্যালারি" },
   { href: "/#faq", label: "প্রশ্নোত্তর" },
 ];
 
@@ -74,12 +74,12 @@ export default function Header() {
 
         <div className="flex items-center gap-2">
           <Link
-            href="/audit/"
+            href="/visit/"
             className={`group hidden h-11 items-center gap-2 rounded-full pl-5 pr-1.5 text-[15px] font-semibold transition-colors sm:inline-flex ${
               onDark ? "bg-lime text-night hover:bg-lime-deep" : "bg-forest-900 text-white hover:bg-forest-800"
             }`}
           >
-            ফ্রি অডিট নিন
+            প্রজেক্ট ভিজিট বুক করুন
             <span
               className={`grid size-8 place-items-center rounded-full transition-transform duration-300 group-hover:translate-x-0.5 ${
                 onDark ? "bg-night text-lime" : "bg-lime text-night"
@@ -162,11 +162,11 @@ export default function Header() {
               </div>
 
               <Link
-                href="/audit/"
+                href="/visit/"
                 onClick={() => setOpen(false)}
                 className="mt-6 flex min-h-[54px] items-center justify-center gap-2 rounded-full bg-forest-900 text-base font-semibold text-white"
               >
-                ফ্রি পেজ অডিট নিন <ArrowRight className="size-4" />
+                প্রজেক্ট ভিজিট বুক করুন <ArrowRight className="size-4" />
               </Link>
             </motion.nav>
           </motion.div>

@@ -8,20 +8,19 @@ import { SITE } from "@/lib/site";
 export const metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Roottosuccess Free Tools — বাংলায় ফ্রি অনলাইন টুলস",
-    template: "%s | Roottosuccess Free Tools",
+    default: "Shafiqal Islam — প্রবাসী এগ্রো রিসোর্ট ও বাংলায় ফ্রি টুলস",
+    template: "%s | Shafiqal Islam",
   },
   description:
-    "ইমেজ কনভার্টার, মেটাডাটা ক্লিনার, ইমেজ আপস্কেলার, বিজয়-ইউনিকোড কনভার্টার, QR কোড জেনারেটরসহ দরকারি সব ফ্রি টুল। কোনো আপলোড নেই — সব কাজ আপনার ব্রাউজারে।",
-  keywords: ["free tools bangla", "bijoy to unicode", "image converter", "metadata remover", "image upscaler", "qr code generator", "Roottosuccess"],
-  applicationName: "Roottosuccess Free Tools",
-  authors: [{ name: "Roottosuccess", url: SITE.website }],
+    "প্রবাসী এগ্রো রিসোর্ট — হবিগঞ্জের বানিয়াচং-আজমিরীগঞ্জে মাছ চাষ, হাঁস পালন, ফলের বাগান ও অর্গানিক খাবার। সাথে ইমেজ কনভার্টার, বিজয়-ইউনিকোড, QR কোডসহ দরকারি সব ফ্রি টুল।",
+  keywords: ["free tools bangla", "bijoy to unicode", "image converter", "metadata remover", "image upscaler", "qr code generator", "Shafiqal Islam", "shafiqalislam", "Probashi Agro Resort", "প্রবাসী এগ্রো রিসোর্ট", "organic food", "অর্গানিক খাবার", "agro farm Habiganj"],
+  applicationName: "Shafiqal Islam",
+  authors: [{ name: SITE.name, url: SITE.url }],
   manifest: "/manifest.webmanifest",
-  icons: { icon: "/icon.png", apple: "/icon.png" },
   openGraph: {
     type: "website",
     locale: "bn_BD",
-    siteName: "Roottosuccess Free Tools",
+    siteName: "Shafiqal Islam",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: { card: "summary_large_image" },

@@ -3,29 +3,13 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Plus } from "lucide-react";
-
-const FAQS = [
-  ["টুলগুলো কি সত্যিই ফ্রি?", "হ্যাঁ, সব টুল সম্পূর্ণ ফ্রি। কোনো অ্যাকাউন্ট, লগইন বা লিমিট নেই।"],
-  [
-    "আমার ছবি বা লেখা কি কোথাও সেভ হয়?",
-    "না। সব প্রসেসিং আপনার নিজের ব্রাউজারেই হয়। ফাইল কোনো সার্ভারে আপলোড হয় না, তাই আপনার ব্যক্তিগত ছবি সম্পূর্ণ নিরাপদ।",
-  ],
-  ["মোবাইল থেকে কি ব্যবহার করা যাবে?", "অবশ্যই। Android ও iPhone — দুটোতেই Chrome, Safari বা যেকোনো আধুনিক ব্রাউজারে সব টুল চলে।"],
-  [
-    "iPhone এর HEIC ছবি কি কনভার্ট করা যায়?",
-    "হ্যাঁ, ইমেজ ফরম্যাট কনভার্টারে HEIC/HEIF ছবি দিলে JPG, PNG বা WEBP তে কনভার্ট হয়ে যাবে।",
-  ],
-  [
-    "ফ্রি পেজ অডিটে কী পাব?",
-    "আমাদের টিম আপনার ফেসবুক পেজ দেখে কনটেন্ট, ব্র্যান্ডিং, অ্যাড ও সেলস ফানেলের দুর্বলতা খুঁজে বের করবে এবং কী করলে বিজনেস গ্রোথ হবে তা হোয়াটসঅ্যাপে জানাবে।",
-  ],
-];
+import { FAQS } from "@/lib/probashi";
 
 export default function Faq() {
   const [open, setOpen] = useState(0);
   return (
     <div className="border-t border-line">
-      {FAQS.map(([q, a], i) => {
+      {FAQS.map(({ q, a }, i) => {
         const on = open === i;
         return (
           <div key={q} className="border-b border-line">

@@ -1,8 +1,8 @@
 {
-  "name": "roottosuccess-tools",
+  "name": "shafiqalislam-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Roottosuccess — বাংলায় ফ্রি অনলাইন টুলস। Static Next.js site for Cloudflare Pages.",
+  "description": "Shafiqal Islam — প্রবাসী এগ্রো রিসোর্ট ও বাংলায় ফ্রি অনলাইন টুলস। Static Next.js site for Cloudflare Pages.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

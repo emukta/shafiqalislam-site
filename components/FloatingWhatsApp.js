@@ -7,7 +7,7 @@ import { waLink } from "@/lib/site";
 export default function FloatingWhatsApp() {
   return (
     <motion.a
-      href={waLink("আসসালামু আলাইকুম, আমি Roottosuccess এর ব্যাপারে জানতে চাই।")}
+      href={waLink("আসসালামু আলাইকুম, আমি প্রবাসী এগ্রো রিসোর্ট সম্পর্কে জানতে চাই।")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="হোয়াটসঅ্যাপে মেসেজ করুন"

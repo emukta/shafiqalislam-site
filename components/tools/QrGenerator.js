@@ -38,7 +38,7 @@ export function buildPayload(type, d) {
 export default function QrGenerator() {
   const toast = useToast();
   const [type, setType] = useState("url");
-  const [data, setData] = useState({ url: "https://roottosuccess.com/", text: "", phone: "", ssid: "", pass: "", enc: "WPA", email: "" });
+  const [data, setData] = useState({ url: "https://www.facebook.com/ProbashiResortAgro", text: "", phone: "", ssid: "", pass: "", enc: "WPA", email: "" });
   const [fg, setFg] = useState("#0f2a18");
   const [bg, setBg] = useState("#ffffff");
   const [size, setSize] = useState(720);
